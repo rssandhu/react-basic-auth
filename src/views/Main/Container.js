@@ -30,7 +30,7 @@ export class Container extends React.Component {
           <Navbar.Header>
             <Navbar.Brand>
               <Link to={'/home'}>
-                React Authentication
+               Burger App
               </Link>
             </Navbar.Brand>
           </Navbar.Header>
