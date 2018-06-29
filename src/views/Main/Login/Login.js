@@ -94,6 +94,9 @@ export class Login extends React.Component {
                 <Alert bsStyle="danger">{this.state.loginError}</Alert>
               }
           </Tab>
+
+          {/* second tab starts */}
+
           <Tab eventKey={2} title="Sign Up">
             <form onSubmit={this.onSignupSubmit.bind(this)}>
               <FormGroup controlId="user">

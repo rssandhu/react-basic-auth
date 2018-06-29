@@ -69,20 +69,11 @@ export default class AuthService extends EventEmitter {
   }
 
   fetch(url, options) {
-    // performs api calls sending the required authentication headers
-    const headers = {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    }
 
-    if (this.isAuthenticated()) {
-      headers['Authorization'] = 'Bearer ' + this.getToken()
-    }
+    console.log('signup service',url , options);
 
-    return fetch(url, {
-      headers,
-      ...options
-    })
-    .then(response => response.json())
+    return ;
+
+    
   }
 }

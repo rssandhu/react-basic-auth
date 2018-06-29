@@ -3,7 +3,8 @@ import {Panel, Col} from 'react-bootstrap'
 import AuthService from 'utils/AuthService'
 import styles from './styles.module.css'
 import { Link } from 'react-router'
-import jwtDecode from 'jwt-decode'
+import jwtDecode from 'jwt-decode';
+
 
 export class Profile extends React.Component {
   static contextTypes = {
@@ -30,14 +31,15 @@ export class Profile extends React.Component {
         <h2>Profile</h2>
         <Panel>
           <Col sm={3}>
-            <img src={profile.gravatar} alt="Avatar" />
+            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Avatar" />  
+            {/* {profile.gravatar} */}
           </Col>
           <Col sm={9}>
             <h2>{profile.username}</h2>
             <hr />
-            <p><i className="glyphicon glyphicon-envelope"></i> { profile.email }</p>
-            <h4>Payload</h4>
-            <pre>{ JSON.stringify(payload, null, 2) }</pre>
+            {/* <p><i className="glyphicon glyphicon-envelope"></i> { profile.email }</p> */}
+            {/* <h4>Payload</h4> */}
+            {/* <pre>{ JSON.stringify(payload, null, 2) }</pre> */}
           </Col>
         </Panel>
       </div>

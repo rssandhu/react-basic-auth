@@ -40,11 +40,11 @@ export class Container extends React.Component {
                 <NavItem>Profile</NavItem>
               </LinkContainer>
             }
-            { auth.isAuthenticated() &&
+            {/* { auth.isAuthenticated() &&
               <LinkContainer to={'/instructor'}>
                 <NavItem>Instructors</NavItem>
               </LinkContainer>              
-            }
+            } */}
           </Nav>
           <Nav pullRight>
             { auth.isAuthenticated() ? (
